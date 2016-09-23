@@ -44,7 +44,7 @@ namespace forloop
                 Console.WriteLine(i);
             }
             */
-            //Övn2
+            //Övn3
             /*
             Console.Write("Mata in ett tal: ");
             int tal1 = int.Parse(Console.ReadLine());
@@ -56,9 +56,47 @@ namespace forloop
             }
             Console.WriteLine(y);
             */
-            //Övn3
-            Console.WriteLine("Mata in ett heltal: ");
-            
+            //Övn4 CP
+            /*
+            Console.Write("Mata in ett heltal: ");
+            int tal = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= tal; i++)
+            {
+                if (i % 7 == 0 && i % 3 == 0)
+                {
+                        Console.WriteLine("Talet " + i + " är jämt delbart med 3 och 7");
+                }
+                else if (i<21)
+                {
+                    Console.WriteLine("Hittade inga tal...");
+                }
+            }
+            */
+            //Övn 5
+            /*
+            Console.Write("Mata in ett heltal: ");
+            int tal = int.Parse(Console.ReadLine());
+            int y = 0;
+            int x = 1;
+            for (int i = 1; i <= tal/2; i++)
+            {
+                Console.Write(x + " ");
+                y = y + x;
+                Console.Write(y + " ");
+                x = y + x;
+            }
+            Console.WriteLine();
+            */
+            //Övn6
+            Console.Write("Mata in ett tal: ");
+            double tal = double.Parse(Console.ReadLine());
+            for (double i = 0; i <= tal; i++) 
+            {
+                if (i*i*i == tal)
+                {
+                    Console.WriteLine(i);
+                }
+            }
         }
     }
 }
